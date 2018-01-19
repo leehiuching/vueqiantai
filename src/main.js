@@ -8,10 +8,12 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 导入和vue无关的第三方包
 import 'normalize.css'
 import axios from 'axios'
+import "./css/style.css";
 // 导入自己写的模块
 import App from './App'
 import router from './router'
 import api from './js/api_config.js'
+import "./less/index.less";
 
 Vue.use(Vuex)
 Vue.use(ElementUI)
