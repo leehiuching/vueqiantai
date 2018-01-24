@@ -57,7 +57,7 @@ export default {
         add(){
             this.$store.commit('modifyShopping',{
                 id: this.$route.params.id,
-                count: this.num7
+                count: this.num7 + (this.$store.state.shopping[this.$route.params.id] || 0)
             })
         }
     }

@@ -94,6 +94,10 @@ export default {
             })
         }
     },
+    created () {
+        this.id = this.$route.params.id;
+        this.getGoodsDetail();
+    },
     watch: {
         $route(){
             this.id = this.$route.params.id;
